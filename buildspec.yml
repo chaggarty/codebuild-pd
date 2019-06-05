@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.7
+    commands:
+      - echo "this is the buildspec in the root dir"
+      - pip install awscli --upgrade
+  build:
+    commands:
+      - echo "Hello, World!"
+  post_build:
+    commands:
+artifacts:
+  files:
+    - '**/*'
