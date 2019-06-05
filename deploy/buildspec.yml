@@ -6,7 +6,7 @@ phases:
       python: 3.7
     commands:
       - echo "This is the deploy buildspec"
-      - pip install awscli --upgrade
+#       - pip install awscli --upgrade
   build:
     commands:
       - echo "Hello, World!"
