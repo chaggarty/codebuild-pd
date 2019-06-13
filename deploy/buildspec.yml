@@ -6,6 +6,8 @@ phases:
       python: 3.7
     commands:
       - echo "This is the deploy buildspec"
+      - ls $CODEBUILD_SRC_DIR
+      - ls $CODEBUILD_SRC_DIR/deploy
 #       - pip install awscli --upgrade
   build:
     commands:
