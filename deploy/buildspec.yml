@@ -10,6 +10,7 @@ phases:
   build:
     commands:
       - echo "Hello, World!"
+      - cat /pd/test.txt
   post_build:
     commands:
 artifacts:
